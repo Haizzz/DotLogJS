@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>DotlogJS by coderkit</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/coderkit/DotLogJS">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>DotlogJS</h1>
+            <h2>A small library that let&#39;s you monitor variable changes</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/coderkit/DotLogJS/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/coderkit/DotLogJS/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="dotlogjs" class="anchor" href="#dotlogjs"><span class="octicon octicon-link"></span></a>DotlogJS</h1>
+
+<h2>
+<a name="a-small-library-that-lets-you-monitor-variable-changes" class="anchor" href="#a-small-library-that-lets-you-monitor-variable-changes"><span class="octicon octicon-link"></span></a>A small library that let's you monitor variable changes</h2>
+
+<h3>
+<a name="dependency" class="anchor" href="#dependency"><span class="octicon octicon-link"></span></a>Dependency</h3>
+
+<p>Dotlog.js requires <a href="http://jquery.com/">jquery</a>.
+Please load Dotlog.js before your script file like so:</p>
+
+<pre><code>&lt;script src="jquery-2.1.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="dotlog.js"&gt;&lt;/script&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>To use Dotlog.js, you will need to put a snippet of code in your script file:</p>
+
+<pre><code>window.logVar = [var1,var2,var3,var4];
+window.checkVar = logVar;
+window.logName = ["health", "armor", "bullets", "stats"];
+function dotLog() {
+    window.logVar = [health,armor,bullets,dead];
+    dotLogPrint();
+}
+</code></pre>
+
+<p><em>logVar</em>: an array that contains the variables that you want to be alerted when they changes.<br><em>logName</em>: an array of names that you want the variables to be printed out as. For the example above, var1 would be printed as "health: var1".<br><em>dotLog()</em>: a function that will trigger and print out the changes in variables. You can change the name of the function</p>
+
+<p>To see what the variable have changed into, trigger the logName() function.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/coderkit">coderkit</a> can be found on <a href="https://github.com/coderkit/DotLogJS">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
